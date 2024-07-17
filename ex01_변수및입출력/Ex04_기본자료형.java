@@ -1,4 +1,4 @@
-package 자료형;
+package ex01_변수및입출력;
 
 public class Ex04_기본자료형 {
     public static void main(String[] args) {

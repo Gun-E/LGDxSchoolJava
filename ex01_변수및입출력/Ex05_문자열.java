@@ -1,4 +1,4 @@
-package 자료형;
+package ex01_변수및입출력;
 
 public class Ex05_문자열 {
     public static void main(String[] args) {

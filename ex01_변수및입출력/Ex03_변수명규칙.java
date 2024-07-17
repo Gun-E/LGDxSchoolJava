@@ -1,4 +1,4 @@
-package 변수;
+package ex01_변수및입출력;
 
 
 public class Ex03_변수명규칙 {

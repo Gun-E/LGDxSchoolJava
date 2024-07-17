@@ -1,4 +1,4 @@
-package 자료형;
+package ex01_변수및입출력;
 
 import java.io.IOException;
 import java.util.Scanner;
