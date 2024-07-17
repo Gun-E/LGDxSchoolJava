@@ -13,5 +13,6 @@ public class Ex05_산술연산자 {
         int secs = num % 60;
 
         System.out.println(hour + "시간 " + min + "분 " + secs + "초");
+
     }
 }
