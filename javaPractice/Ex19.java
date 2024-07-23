@@ -1,6 +1,4 @@
-package javajava;
-
-import java.util.Arrays;
+package javaPractice;
 
 public class Ex19 {
     public static void main(String[] args) {
