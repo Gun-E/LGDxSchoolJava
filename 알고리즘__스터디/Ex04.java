@@ -16,8 +16,26 @@ public class Ex04 {
                 8,7,
                 9,6
         );
-        int blankSize = 6;
-        int [] time = new int [blankSize];
-        //3, 5, 6, 10, 6, 10
+
+        int[] segmentCount = new int[60];
+
+        for (int i = 0; i < segmentCount.length; i++) {
+            int tens = i / 10;
+            int ones = i % 10;
+            segmentCount[i] = segments.get(tens) + segments.get(ones);
+        }
+
+        int count = 0;
+
+        for (int i = 0; i < 24; i++) {
+            for (int j = 0; j < 60; j++) {
+                for (int k = 0; k < 60; k++) {
+                    int sum = segmentCount[i] + segmentCount[j] + segmentCount[k];
+                    if (sum == 30) count++;
+                }
+            }
+        }
+
+        System.out.println(count);
     }
 }
