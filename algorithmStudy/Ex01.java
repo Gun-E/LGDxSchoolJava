@@ -1,4 +1,4 @@
-package 알고리즘__스터디;
+package algorithmStudy;
 
 public class Ex01 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package 알고리즘__스터디;
+package algorithmStudy;
 
 import java.util.List;
 import java.util.regex.Pattern;
