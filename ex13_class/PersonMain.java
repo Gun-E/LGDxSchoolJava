@@ -14,5 +14,6 @@ public class PersonMain {
 
         System.out.println("------사람 정보------");
         people.forEach(System.out::println);
+        System.out.println(person);
     }
 }
