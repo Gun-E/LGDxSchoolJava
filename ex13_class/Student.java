@@ -18,16 +18,16 @@ public class Student {
         this.mlScore = mlScore;
     }
 
-    @Override
-    public String toString() {
-        return "이름 : " + name +
-                "\n생일 : " + birth +
-                "\n나이 : " + age +
-                "\nJava 점수 : " + javaScore +
-                "\n데이터베이스 점수 : " + dbScore +
-                "\n머신러닝 점수 : " + mlScore +
-                '\n';
-    }
+//    @Override
+//    public String toString() {
+//        return "이름 : " + name +
+//                "\n생일 : " + birth +
+//                "\n나이 : " + age +
+//                "\nJava 점수 : " + javaScore +
+//                "\n데이터베이스 점수 : " + dbScore +
+//                "\n머신러닝 점수 : " + mlScore +
+//                '\n';
+//    }
 
     public String getName() {
         return name;
