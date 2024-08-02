@@ -20,9 +20,4 @@ public class Amumu extends LolCharacter{
         System.out.println("슬픈 미라의 저주(Curse of the Sad Mummy) !!!");
     }
 
-    @Override
-    public void flash(){
-        super.flash();
-    }
-
 }

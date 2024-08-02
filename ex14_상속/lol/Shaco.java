@@ -20,10 +20,4 @@ public class Shaco extends LolCharacter{
     public void r() {
         System.out.println("환각(Hallucinate) !!!");
     }
-
-    @Override
-    public void flash(){
-        super.flash();
-    }
-
 }

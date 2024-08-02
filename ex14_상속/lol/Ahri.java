@@ -19,9 +19,4 @@ public class Ahri extends LolCharacter{
     public void r() {
         System.out.println("혼령 질주(Spirit Rush) !!!");
     }
-
-    @Override
-    public void flash(){
-        super.flash();
-    }
 }
