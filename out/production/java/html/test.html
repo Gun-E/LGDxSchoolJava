@@ -2,23 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Half Circle</title>
     <style>
-        .title-1:hover {
-            display: none;
+        .circle {
+            width: 500px;
+            height: 500px;
+            background: #0047A0;
+            border-radius: 50%;
+            position: relative;
+            transform: rotate(33.69deg);
+            top: 25%;
+            inset-inline-start: 50%;
         }
 
-        .title-1:hover + .title-2 {
-            display: block;
+        .half-circle {
+            width: 500px;
+            height: 250px;
+            background: #CD2E3A;
+            border-radius: 250px 250px 0 0;
+            position: absolute;
         }
 
-        .title-2 {
-            display: none;
+        .in-circle-1 {
+            width: 250px;
+            height: 250px;
+            background: #CD2E3A;
+            border-radius: 50%;
+            position: absolute;
+            top: 25%;
+        }
+
+        .in-circle-2 {
+            width: 250px;
+            height: 250px;
+            background: #0047A0;
+            border-radius: 50%;
+            position: absolute;
+            top: 25%;
+            inset-inline-end: 0;
+        }
+        .tae{
+            width: 1500px;
+            height: 1000px;
+            border: solid 1px black;
         }
     </style>
 </head>
 <body>
-<h1 class="title-1">안녕</h1>
-<h1 class="title-2">멍총이</h1>
+<div class="tae">
+    <div class="circle">
+        <div class="half-circle"></div>
+        <div class="in-circle-1"></div>
+        <div class="in-circle-2"></div>
+    </div>
+</div>
+
 </body>
 </html>
