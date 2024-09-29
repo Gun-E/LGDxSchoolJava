@@ -36,6 +36,7 @@ public class Ex09 {
 
         return result.stream().mapToInt(i -> i).toArray();
     }
+    // 해시맵
     /*
      HashMap<String, HashMap<Integer, Integer>> map = new HashMap<>();
         for (int i = 0; i < genres.length; i++) {
