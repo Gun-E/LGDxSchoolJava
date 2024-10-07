@@ -19,8 +19,9 @@ public class Ex07 {
 //        result.forEach(c -> {
 //            System.out.println(Arrays.toString(c)+" Count: " + sortCount(c));
 //        });
-        System.out.println(sortCount(new int[]{3, 1, 2}));
+        System.out.println(sortCount(new int[] {3, 1, 2}));
     }
+
     private static void generatePermutations(int[] arr, int start, List<int[]> result) {
         if (start == arr.length - 1) {
             result.add(arr.clone());
@@ -50,13 +51,27 @@ public class Ex07 {
     static int sortCount(int[] arr) {
         int count = 0;
 
-        for (int i = 1; i < arr.length; i++) {
-            while (arr[i] <= arr[i - 1]) {
-                count++;
-                arr = moveFirst(arr, i);
-                i=1;
-                System.out.println(Arrays.toString(arr));
+        for (int i = 0; i < arr.length; i++) {
+            int min = Integer.MAX_VALUE;
+            for (int j = 1; j < arr.length; j++) {
+                if (Math.abs(arr[i] - arr[j]) < min ) {
+                    min = Math.abs(arr[i] - arr[j]);
+                }
             }
+            System.out.println(min);
+            for (int j = 1; j < arr.length; j++) {
+                if (arr[i] - arr[j] == min) {
+                    arr = moveFirst(arr, i);
+                    count++;
+                    break;
+                }
+            }
+//            while (arr[i] <= arr[i - 1]) {
+//                count++;
+//                arr = moveFirst(arr, i);
+//                i=1;
+//            }
+                System.out.println(Arrays.toString(arr));
         }
         return count;
     }
@@ -66,8 +81,9 @@ public class Ex07 {
         int[] newArr = new int[arr.length];
         newArr[0] = element;
         System.arraycopy(arr, 0, newArr, 1, index);
-        if (arr.length - (index + 1) >= 0)
+        if (arr.length - (index + 1) >= 0) {
             System.arraycopy(arr, index + 1, newArr, index + 1, arr.length - (index + 1));
+        }
         return newArr;
     }
 
