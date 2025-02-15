@@ -9,7 +9,7 @@ public class Ex35 {
         System.out.println(ex35.solution("cdcd"));
     }
 
-//    public int solution(String s) {
+    //    public int solution(String s) {
 //        String[] words = s.split("");
 //        List<String> list = new ArrayList<>(Arrays.asList(words));
 //
@@ -28,16 +28,16 @@ public class Ex35 {
 //
 //        return 0;
 //    }
-public int solution(String s) {
-    Stack<Character> stack = new Stack<>();
+    public int solution(String s) {
+        Stack<Character> stack = new Stack<>();
 
-    for (char c : s.toCharArray()) {
-        if (!stack.isEmpty() && stack.peek() == c) {
-            stack.pop();
-        } else {
-            stack.push(c);
+        for (char c : s.toCharArray()) {
+            if (!stack.isEmpty() && stack.peek() == c) {
+                stack.pop();
+            } else {
+                stack.push(c);
+            }
         }
+        return stack.isEmpty() ? 1 : 0;
     }
-    return stack.isEmpty() ? 1 : 0;
-}
 }
